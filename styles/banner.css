@@ -1,0 +1,23 @@
+section#banner {
+    max-width: none;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../images/dino-banner.jpg');
+    background-attachment: fixed;
+    background-position: 75%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    place-items: center start;
+}
+
+#banner div {
+    width: 50%;
+    margin-left: 15vw;
+}
+
+#banner h1 {
+    font-size: clamp(4rem, 5vw, 8rem);
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+}
