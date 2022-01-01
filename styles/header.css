@@ -1,5 +1,5 @@
 header {
-    width: 100%;
+    width: 100vw;
     position: fixed;
     background-color: #0000004f;
 }
@@ -9,13 +9,12 @@ header section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 6rem;
+    padding: 0 3rem;
 }
 
-.logo img {
-    width: 13%;
-    height: 100%;
-    margin: 0 auto;
+.logo {
+    width: 80px;
+    height: 50px;
 }
 
 header ul.menu-descktop {
@@ -52,7 +51,7 @@ header #icon-menu {
     display: none;
     width: 50px;
     height: 50px;
-    margin-right: 4rem;
+    /* margin-right: 1rem; */
     background-image: url('../images/hamburger-icon-white.png');
     background-repeat: no-repeat;
     background-position: center;
@@ -73,10 +72,11 @@ ul#ul-mobile li {
     overflow: hidden;
 }
 
+header img, #icon-menu {
+    min-width: 5rem;
+}
+
 @media screen and (max-width: 1024px) {
-    header section {
-        padding: 0;
-    }
 
     header ul.menu-descktop {
         display: none;
